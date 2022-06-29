@@ -1,0 +1,19 @@
+.navButton{
+    flex: 1;
+    border-bottom: solid 5px;
+    // border-color: red;
+    width: 10%;
+    margin-left: 5px;
+}
+
+.navButton:hover{
+    transition: 1s;
+    background-color: grey;
+    border-radius: 10px;
+}
+.navbarWrapper{
+    display: flex;
+    margin-left: auto; 
+margin-right: 0;
+    width: 50%;
+}
