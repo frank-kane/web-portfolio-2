@@ -13,7 +13,7 @@
 }
 
 .contentHolder > *{
-  border-style: solid;
+  /* border-style: solid; */
 }
 
 /* .App,
@@ -21,3 +21,5 @@
   border: none;
 } */
 
+/* Borders on everything */
+/* * { border: 1px solid black; } */

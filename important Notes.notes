@@ -18,3 +18,8 @@
     }
     
 }
+
+[css]
+//This gives a border to every child element. What a time saver!
+
+* { border: 1px solid black; }

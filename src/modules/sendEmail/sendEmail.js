@@ -57,7 +57,7 @@ const SendEmail = ()=>{
     return (
         <div className='sendEmailWrapper'>
 
-<ScrollAnimation animateIn="fadeInLeftBig"  animateOnce={false}>
+<ScrollAnimation animateIn="fadeInLeftBig"  animateOnce={false} className='formWrapper'>
       
       <div  className='formContainer' reference={el1}>
         <form onSubmit={onSubmit}>
