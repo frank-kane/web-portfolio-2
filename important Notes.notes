@@ -1,0 +1,20 @@
+
+
+
+
+
+
+[css]
+//THIS MAKES IT SO THAT WHEN THE SCREEN SHRINKS THE DIVS MOVE TO FIT IT
+@media only screen and (max-width: 1200px) {
+    .introductionWrapper{
+        display:contents;
+    }
+    .profilepic{
+        display: inline-block;
+    }
+    .greeting{
+        
+    }
+    
+}

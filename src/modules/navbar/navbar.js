@@ -1,14 +1,15 @@
 
 import './navbar.scss';
+// import './navbar.less'
 
 
 const NavBar = ()=>{
 
     return(
         <div className="navbarWrapper">
-            <h3 className="navButton">About Me</h3>
-            <h3 className="navButton">Portfolio</h3>
-            <h3 className="navButton">Resume</h3>
+           <a href="" className="border-animation"><h3 className="border-animation__inner">About Me</h3></a> 
+           <a href="" className="border-animation"><h3 className="border-animation__inner">Portfolio</h3></a>
+           <a href="" className="border-animation"><h3 className="border-animation__inner">Contact Me</h3></a>
             
         </div>
     )
