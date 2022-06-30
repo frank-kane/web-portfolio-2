@@ -5,6 +5,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import NavBar from "../navbar/navbar";
 import Introduction from '../introduction/introduction'
 import Portfolio from '../portfolio/portfolio'
+import SendEmail from '../sendEmail/sendEmail';
+import TestEmail from '../portfolio/testEmail';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       
       <Introduction/>
       <Portfolio/>
+      <SendEmail/>
+      {/* <TestEmail/> */}
 
       </div>
       
