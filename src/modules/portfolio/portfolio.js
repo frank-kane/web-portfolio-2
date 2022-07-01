@@ -9,6 +9,7 @@ import htmlIcon from './icons/html5.png'
 import cssIcon from './icons/cssIcon.png';
 import {useState} from 'react';
 import styled from "styled-components";
+import { Parallax } from "react-scroll-parallax";
 const Portfolio = () =>{
     const [isHovering, setIsHovering] = useState(false);
 

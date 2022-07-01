@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 .introductionWrapper{
     display: flex;
-    height: 100vh;
+    height: 90vh;
     // border-style: solid;
     // border-color: coral;
     position: relative;
@@ -44,14 +45,16 @@
 }
 
 .greeting{
+    color: white;
+    font-family: 'Montserrat';
     display: inline-block;
     width: 45%;
     // margin-top: 22%;
     // margin-left: auto; 
-margin-right: 0;
+margin-left: 5%;
 // border-style: solid;
-margin-top: 5%;
-font-size: 70px;
+margin-top: 10%;
+font-size: 50px;
   
 }
 

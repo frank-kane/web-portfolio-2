@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+
 .navButton{
     flex: 1;
     // border-bottom: solid 5px;
     // border-color: red;
     width: 10%;
     margin-left: 5px;
+    font-family: 'Montserrat';
 }
 
 
@@ -49,7 +54,7 @@ margin-right: 0;
       cursor: pointer;
       padding: 0.2em;
       // background: rgba(50, 50, 50, 0.5);
-      background: rgb(255, 255, 255);
+      // background: rgb(255, 255, 255);
       z-index: 1;
       border: solid var(--border-width) transparent;
     }

@@ -2,6 +2,7 @@
 import './introduction.scss'
 import profilepic from './profilePic2.avif'
 import house from './house.webp'
+import { Parallax } from "react-scroll-parallax";
 const Introduction = () => {
 
     return (

@@ -3,23 +3,78 @@
   /* justify-content: center; */
   /* max-width: 2000px; */
   /* border: solid 5px rgb(0, 247, 74); */
+  background-image: url(./coloredBackground10.png);
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+*{
+  scroll-behavior: smooth;
 }
 
 .contentHolder{
   max-width: 4000px;
   /* min-width:2000px; */
-  /* border: solid 5px blue; */
+  border: solid 5px blue;
+  /* width: 1500px; */
   display: inline-block;
 }
 
-.contentHolder > *{
-  /* border-style: solid; */
+.scrollPosition{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: auto;
+  font-size: medium;
+  background-color: wheat;
+  width: 400px;
+  z-index: 5;
 }
 
-/* .App,
-.App > *{
-  border: none;
+
+.footer{
+  position: absolute;
+  /* bottom: 0; */
+  width: 100vw;
+  height:75px;
+  background-color: aliceblue;
+}
+
+.laptopImage{
+  position: absolute;
+  top: 2175px;
+  /* left: 70%; */
+  animation: fadeInPic 2s forwards;
+}
+
+@keyframes fadeInPic{
+  0%{
+    opacity: 0;
+
+  }100%{
+    opacity: 1;
+  }
+}
+
+.scrollDesk {
+  position: absolute;
+  top: 2175px;
+  /* left: 70%; */
+  width: 100%;
+  z-index: 3;
+}
+
+
+/* @media only screen and (max-width: 2500px) {
+  .App {
+    background-image: url(./coloredBackgroundSmall.png);
+    background-size: cover;
+  }
 } */
+
+
 
 /* Borders on everything */
 /* * { border: 1px solid black; } */
+
+
