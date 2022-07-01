@@ -3,13 +3,13 @@ import './navbar.scss';
 // import './navbar.less'
 
 
-const NavBar = ()=>{
+const NavBar = (props)=>{
 
     return(
         <div className="navbarWrapper">
-           <a href="" className="border-animation"><h3 className="border-animation__inner">About Me</h3></a> 
-           <a href="" className="border-animation"><h3 className="border-animation__inner">Portfolio</h3></a>
-           <a href="" className="border-animation"><h3 className="border-animation__inner">Contact Me</h3></a>
+           <div className="border-animation"><h3 className="border-animation__inner">About Me</h3></div> 
+           <div onClick={props.scrollToPortfolio}  className="border-animation"><h3 className="border-animation__inner">Portfolio</h3></div>
+           <div onClick={props.scrollToEmail} className="border-animation"><h3 className="border-animation__inner">Contact Me</h3></div>
             
         </div>
     )

@@ -7,6 +7,11 @@ import pythonIcon from './icons/pythonIcon.png'
 import javascriptIcon from './icons/javascriptIcon.png'
 import htmlIcon from './icons/html5.png'
 import cssIcon from './icons/cssIcon.png';
+import githubIcon from './icons/githubIcon.webp'
+import nodejsIcon from './icons/nodejsIcon.webp'
+import sqlIcon from './icons/sqlIcon.png'
+import firebaseIcon from './icons/firebaseIcon.webp'
+import vscodeIcon from './icons/vscodeIcon.png'
 import {useState} from 'react';
 import styled from "styled-components";
 import { Parallax } from "react-scroll-parallax";
@@ -128,6 +133,14 @@ const AnimatedParagraph = styled.p`
     {/* {isHovering && <h3 className='iconName'>React </h3>} */}
         <img src={pythonIcon} alt="" className='icon' />
     </div>
+    <div className='iconHolder'>
+    {/* {isHovering && <h3 className='iconName'>React </h3>} */}
+        <img src={githubIcon} alt="" className='icon' />
+    </div>
+    <div className='iconHolder'>
+    {/* {isHovering && <h3 className='iconName'>React </h3>} */}
+        <img src={nodejsIcon} alt="" className='icon' />
+    </div>
 
     <br/>
     <div className='iconHolder'>
@@ -144,7 +157,15 @@ const AnimatedParagraph = styled.p`
     </div>
     <div className='iconHolder'>
     {/* {isHovering && <h3 className='iconName'>React </h3>} */}
-        <img src={flutterIcon} alt="" className='icon' />
+        <img src={sqlIcon} alt="" className='icon' />
+    </div>
+    <div className='iconHolder'>
+    {/* {isHovering && <h3 className='iconName'>React </h3>} */}
+        <img src={firebaseIcon} alt="" className='icon' />
+    </div>
+    <div className='iconHolder'>
+    {/* {isHovering && <h3 className='iconName'>React </h3>} */}
+        <img src={vscodeIcon} alt="" className='icon' />
     </div>
     
     

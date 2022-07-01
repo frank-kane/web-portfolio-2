@@ -2,11 +2,12 @@
 /* Popup style */
 .popup-box {
   position: fixed;
-  background: #177bfd50;
-  width: 100%;
+  // background: #177bfd50;
+  width: 100vw;
   height: 100vh;
-  top: 0;
-  left: 0;
+  overflow: hidden;
+  margin: 0 auto;
+
 }
  
 .box {
@@ -21,9 +22,10 @@
   padding: 20px;
   border: 1px solid #999;
   border-radius: 10px;
-  overflow: auto;
   font-size: 35px;
   color: antiquewhite;
+  overflow: hidden;
+  max-width: 800px;
 }
  
 .close-icon {

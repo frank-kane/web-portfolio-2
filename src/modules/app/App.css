@@ -3,9 +3,10 @@
   /* justify-content: center; */
   /* max-width: 2000px; */
   /* border: solid 5px rgb(0, 247, 74); */
-  background-image: url(./coloredBackground10.png);
+  background-image: url(./coloredbackground11.png);
   background-size: cover;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *{
@@ -15,46 +16,73 @@
 .contentHolder{
   max-width: 4000px;
   /* min-width:2000px; */
-  border: solid 5px blue;
+  /* border: solid 5px blue; */
   /* width: 1500px; */
   display: inline-block;
 }
 
 .scrollPosition{
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
-  right: auto;
   font-size: medium;
   background-color: wheat;
   width: 400px;
   z-index: 5;
+
 }
 
 
 .footer{
   position: absolute;
-  /* bottom: 0; */
-  width: 100vw;
-  height:75px;
-  background-color: aliceblue;
+  width: 99.5vw;
+  height:50px;
+  background-color: #282c34;
+  color: aliceblue;
+  
 }
 
-.laptopImage{
+
+
+.wheel{
   position: absolute;
-  top: 2175px;
+  /* top: 778px; */
+  /* left:1000px; */
   /* left: 70%; */
-  animation: fadeInPic 2s forwards;
+  
+
 }
 
-@keyframes fadeInPic{
-  0%{
-    opacity: 0;
 
-  }100%{
-    opacity: 1;
-  }
+.deskMan{
+  position: absolute;
+  /* top: 2410px; */
+  transform: rotate(180deg);
+  margin-top: 2297px;
+  /* left: 70%; */
+  
 }
+
+
+
+.buildingPic{
+  position: absolute;
+  /* top: 2700px; */
+  /* left:1300px; */
+  /* bottom:0; */
+  animation: buildingAppear 2s forwards 
+}
+
+
+
+@keyframes buildingAppear{
+  0%{opacity: 0; top:2400px; right:72%}
+  100%{opacity: 1;top:2700px; right:72%}
+}
+
+
+
+
 
 .scrollDesk {
   position: absolute;

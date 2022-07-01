@@ -15,15 +15,15 @@ init("ANNdWnd1Kk-RNpuBx");
 
 
 
-const SendEmail = ()=>{
+const SendEmail = (props)=>{
     const el1 = useRef();
+    const inputRef = useRef(null);
+
+    const setMessage = useState('');
   
-  
-    const [isOpen, setIsOpen] = useState(false);
-   
-    const togglePopup = () => {
-      setIsOpen(!isOpen);
-    }
+  const clearInput = ()=>{
+    setMessage(inputRef.current.value)
+  }
   
     
     const [toSend, setToSend] = useState({
@@ -31,6 +31,8 @@ const SendEmail = ()=>{
       message: '',
       reply_to: '',
     });
+
+    
   
     const onSubmit = (e) => {
       e.preventDefault();
@@ -46,8 +48,9 @@ const SendEmail = ()=>{
         .catch((err) => {
           console.log('FAILED...', err);
         });
-  
-        togglePopup();
+        console.log("SUBMITEDD EMAIL");
+        
+        props.togglePopup();
     };
   
     const handleChange = (e) => {
@@ -58,11 +61,17 @@ const SendEmail = ()=>{
         <div className='sendEmailWrapper'>
 
 <ScrollAnimation animateIn="fadeInLeftBig"  animateOnce={false} className='formWrapper'>
+
       
       <div  className='formContainer' reference={el1}>
+        
+  <h3 className='contact'>CONTACT</h3>
+
+<p className='contactGreeting'>If you're interested in contacting me about employment, a design opportunity, <br/> or anything else please feel free to drop an email.</p>
         <form onSubmit={onSubmit}>
-        <div ><h2 id='emailTitle'> If you would like to contact me, please feel free to reach out.</h2></div>
+        <div ><h2 id='emailTitle'>GET IN TOUCH</h2></div>
     <input
+    ref={inputRef}
       type='text'
       name='from_name'
       placeholder='Name'
@@ -91,6 +100,7 @@ const SendEmail = ()=>{
   
     
     <button type='submit' id='sendButton'> <img src={sendArrow} alt="" id='sendArrow'/></button>
+    {/* <button onClick={props.togglePopup} id='sendButton'> <img src={sendArrow} alt="" id='sendArrow'/></button> */}
     
     <br/>
   
@@ -106,22 +116,6 @@ const SendEmail = ()=>{
     
     
   </form>
-  {/* <input
-        type="button"
-        value="Click to Open Popup"
-        onClick={togglePopup}
-      /> */}
-  
-  {isOpen && <Popup
-        content={<>
-          <b>Email Sent!</b>
-          <p>Thank you so much for your interest in me. I look forward to discussing any future opportunity and will reply as soon as possible. <br/>
-          If you would like to send an additional email feel free to contact me at: <br/>fkane01@manhattan.edu </p>
-          <img src={profilepic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/>
-          <button onClick={togglePopup}>Close</button>
-        </>}
-        // handleClose={togglePopup}
-      />}
         
       </div >
       </ScrollAnimation>

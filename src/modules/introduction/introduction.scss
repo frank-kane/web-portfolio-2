@@ -2,7 +2,7 @@
 
 .introductionWrapper{
     display: flex;
-    height: 90vh;
+    height: 80vh;
     // border-style: solid;
     // border-color: coral;
     position: relative;
@@ -15,21 +15,23 @@
     
 }
 
-// .contentHolder{
-//     // display: flex;
-//     height: 100vh;
-//     border-style: solid;
-//     position: relative;
-//     // max-width: 2000px;
-//     text-align: center;
 
-// }
 
 .picHolder{
     height: 100%;
     // border-style: solid;
     width: 50%;
+    animation: fadePic 2s forwards;
     
+}
+
+@keyframes fadePic{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+
+    }
 }
 
 .profilepic{
@@ -39,9 +41,23 @@
     max-width: 800px;
     height: 800px;
     border-radius: 75%;
-    margin-top: 15%;
-    // -ms-transform: translateY(-50%);
-    // transform: translateY(-50%);
+    margin-top: 7%;
+    animation: picFloat 4s infinite ease-in-out
+}
+
+@keyframes picFloat{
+    0%{
+        padding-top: none;
+
+    }50%{
+        padding-top: 30px;
+
+    }
+    100%{
+        padding-top: none;
+        
+
+    }
 }
 
 .greeting{
@@ -55,8 +71,43 @@ margin-left: 5%;
 // border-style: solid;
 margin-top: 10%;
 font-size: 50px;
+animation: greetingAnimation 1s forwards;
   
 }
+
+@keyframes greetingAnimation{
+    0%{
+        opacity: 0;
+        margin-right: 15%;
+
+    }100%{
+        margin-right: 0%;
+        opacity: 1;
+
+    }
+}
+
+// .greeting > *{
+//     overflow: hidden;
+//     border-right: .15em solid orange;
+//     animation: 
+//     typing 3.5s steps(15, end),
+//     blink-caret .5s step-end infinite;
+// }
+
+// @keyframes typing {
+//     from { width: 0 }
+//     to { width: 100% }
+//   }
+  
+//   /* The typewriter cursor effect */
+//   @keyframes blink-caret {
+//     from, to { border-color: transparent }
+//     50% { border-color: orange }
+//     100%{
+//         border:none;
+//     }
+//   }
 
 
 
@@ -67,9 +118,7 @@ font-size: 50px;
     }
     .profilepic{
         display: inline-block;
-    }
-    .greeting{
-        
+        animation: none;
     }
     
 }
