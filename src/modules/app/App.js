@@ -21,7 +21,9 @@ import codingGif from './codingGif4.gif'
 
 
 const App = () => {
-  document.title = 'Frank Kane Web Portfolio'
+
+  
+ 
   const emailRef = useRef(null);
   const [windowSize, setWindowSize] = useState(getWindowSize());
   const portfolioRef = useRef(null);
