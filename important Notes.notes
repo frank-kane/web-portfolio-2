@@ -24,3 +24,22 @@ https://frank-kane-web-portfolio.herokuapp.com/
 //This gives a border to every child element. What a time saver!
 
 * { border: 1px solid black; }
+
+
+
+//THIS IS HOW TO DO AN ONCLICK EVENT WITH PASSING A PARAMETER
+[javascript]
+import React from 'react';
+
+const ExampleComponent = () => {
+  
+  function sayHello(name) {
+    alert(`hello, ${name}`);
+  }
+  
+  return (
+    <button onClick={() => sayHello('James')}>Greet</button>
+  );
+}
+
+export default ExampleComponent;

@@ -18,11 +18,14 @@ import styled from "styled-components";
 import { Parallax } from "react-scroll-parallax";
 import Popup from '../popup/Popup';
 import profilePic4 from '../images/profilepic4.jpg'
+import wheel from '../images/wheel.webp'
 import '../popup/Popup.scss';
 const Portfolio = () =>{
     const [isOpen, setIsOpen] = useState(false);
     const [isHovering, setIsHovering] = useState(false);
-    // const [content,setContent] = useState(handleContent())
+    
+
+
 
     const Hover = styled.div`
   height: 100%;
@@ -50,6 +53,7 @@ const Portfolio = () =>{
   }
 `
 
+
 const AnimatedTitle = styled.h2`
   /* Transform to 50px down on load, but user doesn't see this because div this text is in is translucent  */
   transform: translate3d(0, 50px, 0);
@@ -65,43 +69,91 @@ const AnimatedParagraph = styled.p`
   font-size: 12px;
   font-style: italic;
 `
-const togglePopup = () => {
-    console.log('POPUP Prop found')
-    setIsOpen(!isOpen);
-  }
 
-  // const handleContent=(contentSelection)=>{
+  const [content,setContent] = useState();
 
-  //   if(contentSelection == 'excelScheduler'){
-      
-  //     content = <div>
-  //       <b>Email Sent!</b>
-  //           <p>Thank you so much for your interest in me. I look forward to discussing any future opportunity and will reply as soon as possible. <br/>
-  //           If you would like to send an additional email feel free to contact me at: <br/>fkane01@manhattan.edu </p>
-  //           <img src={profilePic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/>
-  //           <button onClick={togglePopup}>Close</button>
-  
-  //     </div>
-  //   }if(contentSelection == 'test'){
-  //     content = <div>
-  //       <b>test</b>
-            
-  
-  //     </div>
-      
-  //   }
-  
-  // }
+
 
 
     const handleMouseOver = async() => {
         // await delay(1000)
         setIsHovering(true);
       };
+
+    
+
+     async function setCurrentContent (contentChoice){
+        if(contentChoice == 1){
+          setContent(<>
+            <b>Excel Scheduler</b>
+            <th>Frameworks:</th>
+            <table> 
+              <tr key="">
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+
+            </tr>
+              
+              
+            </table>
+            <p>This project was a favor to a friend who was having trouble creating his workshops schedule on time. <br/>
+            He needed a program where he could plug in values for dates and it would autogenerate thier schedule for them. 
+            Once he tested my program he said this has the potential to save hundreds of man hours.</p>
+            <br/>
+
+            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
+            <p>This project was a favor to a friend who was having trouble creating his workshops schedule on time. <br/>
+            He needed a program where he could plug in values for dates and it would autogenerate thier schedule for them. 
+            Once he tested my program he said this has the potential to save hundreds of man hours.</p>
+            <br/>
+            
+            <img src={profilePic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/>
+            
+          </>)
+          togglePopup();
+
+        }if(contentChoice == 2){
+          setContent(<>
+            <b>Test2</b>
+            <p>Thank you so much for your interest in me. I look forward to discussing any future opportunity and will reply as soon as possible. <br/>
+            If you would like to send an additional email feel free to contact me at: <br/>fkane01@manhattan.edu </p>
+            <img src={profilePic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/>
+            
+          </>)
+          togglePopup();
+          
+
+        }
+        
+        
+      }
     
       const handleMouseOut = () => {
         setIsHovering(false);
       };
+
+
+
+
+
+
+      function togglePopup() {
+        if(isOpen == false){
+          setIsOpen(true)
+        }if(isOpen == true){
+          setIsOpen(false)
+        }
+        console.log('POPUP Prop found')
+        // setIsOpen(!isOpen);
+        console.log(isOpen)
+      }
+//==============================================================================================================================
+//==============================================================================================================================  
+//==============================================================================================================================
+//==============================================================================================================================
+//==============================================================================================================================
+//==============================================================================================================================  
     return(
         <div className="portfolioWrapper">
             
@@ -116,12 +168,12 @@ const togglePopup = () => {
 
 
             <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
-            <Hover onClick={togglePopup}>
+            <Hover onClick={()=>setCurrentContent(1)}>
     <div> Python Powered Excel Scheduler</div>
-    </Hover>
+    </Hover >
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
-    <Hover>
+    <Hover onClick={()=>setCurrentContent(2)}>
     <div>Hello</div>
     </Hover>
     </ScrollAnimation>
@@ -225,13 +277,9 @@ const togglePopup = () => {
 </div>
 </ScrollAnimation>
             
-{isOpen && <Popup  content={<>
-          <b>Excel Scheduler</b>
-          <p>This program was actually a favor to a friend who is still in the Air Force.<br/> He was having problems generating his schedule on time and needed some way to automate it.<br/>
-          If you would like to send an additional email feel free to contact me at: <br/>fkane01@manhattan.edu </p>
-          {/* <img src={profilepic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/> */}
-          <button onClick={togglePopup}>Close</button>
-        </>}></Popup>}
+
+
+        {isOpen && <Popup  content={<div>{content} <button onClick={togglePopup}>Close</button></div>  }></Popup>}
      
         </div>
 

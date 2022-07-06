@@ -15,6 +15,10 @@
   margin-bottom:0;
 }
 
+.projectImage{
+  border:solid 2px black;
+}
+
 .portfolioTitle{
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
@@ -32,6 +36,16 @@
   background-color: #2196F3;
   padding: 10px;
 
+}
+
+.rowItem{
+  padding-left: 10px;
+  padding-right: 10px;
+  // border: solid 5px;
+}
+
+.rowItem:hover{
+  border-bottom: solid 1px ;
 }
 
 
@@ -63,7 +77,10 @@
     text-align: center;
     height: 200px;
     width: 30%;
+    background-image: url(../images/airforce.png);
   }
+
+ 
 
   // .portfolioTiles{
   //   margin-top: 5%;

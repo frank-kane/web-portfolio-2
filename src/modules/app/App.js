@@ -12,7 +12,7 @@ import profilepic4 from '../images/profilepic4.jpg'
 import { ParallaxProvider } from "react-scroll-parallax";
 import { Parallax } from "react-scroll-parallax";
 import React, { useState, useEffect,useRef } from 'react';
-import wheel from './wheel.webp'
+// import wheel from './wheel.webp'
 import  { ScrollRotate } from 'react-scroll-rotate';
 import Popup from '../popup/Popup';
 import '../popup/Popup.scss';
