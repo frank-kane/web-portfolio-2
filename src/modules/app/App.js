@@ -18,6 +18,7 @@ import Popup from '../popup/Popup';
 import '../popup/Popup.scss';
 import buildingPic from './buildingPic.gif'
 import codingGif from './codingGif4.gif'
+import { parseElementTransitionEffects } from 'parallax-controller';
 
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
   const portfolioRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
+
+
   
   const scrollToEmail = () =>{
     console.log('SCROLLLLL')
@@ -66,30 +69,8 @@ useEffect(() => {
 }, []);
 
 
-const moveDeskMan = (scrollPosition)=>{
-  var num;
-  var opac;
-  if (scrollPosition>1000 && scrollPosition<1500){
-    num = scrollPosition-1300
 
-  }else if(scrollPosition > 1500){
-    num = 200
 
-  }
-  return num;
-
-}
-
-const moveBuilding = (scrollPosition)=>{
-  var num;
-
-  if (scrollPosition<3000){
-    num = 3000-scrollPosition+2200
-
-  }
-  return num;
-
-}
 
 
   return (
@@ -98,11 +79,16 @@ const moveBuilding = (scrollPosition)=>{
       <div className='scrollPosition'>Scroll Position:{scrollPosition}:NUM:</div>
 
       <ParallaxProvider>
+      {scrollPosition > 2000 &&
+        
 
-      {/* {scrollPosition > 1300 && */}
-      <img src={codingGif} alt="" className='deskMan' height={300} width={500}  style={{ right:moveDeskMan(scrollPosition)}}/>
       
-      {/* } */}
+      <img src={codingGif} alt="" className='deskMan' height={300} width={500} />
+      
+      
+      
+    
+      }
 
 {/* <img src={buildingPic} alt="" className='buildingPic' height={800} width={500} style={{ top:moveBuilding(scrollPosition)}}/> */}
 {/* <img src={building2} alt="" className='buildingPic' height={800} width={500} style={{ top:moveBuilding(scrollPosition)}}/>       */}

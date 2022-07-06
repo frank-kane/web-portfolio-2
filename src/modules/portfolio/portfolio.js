@@ -12,11 +12,17 @@ import nodejsIcon from './icons/nodejsIcon.webp'
 import sqlIcon from './icons/sqlIcon.png'
 import firebaseIcon from './icons/firebaseIcon.webp'
 import vscodeIcon from './icons/vscodeIcon.png'
+import pillar from './pillar.webp'
 import {useState} from 'react';
 import styled from "styled-components";
 import { Parallax } from "react-scroll-parallax";
+import Popup from '../popup/Popup';
+import profilePic4 from '../images/profilepic4.jpg'
+import '../popup/Popup.scss';
 const Portfolio = () =>{
+    const [isOpen, setIsOpen] = useState(false);
     const [isHovering, setIsHovering] = useState(false);
+    // const [content,setContent] = useState(handleContent())
 
     const Hover = styled.div`
   height: 100%;
@@ -59,6 +65,33 @@ const AnimatedParagraph = styled.p`
   font-size: 12px;
   font-style: italic;
 `
+const togglePopup = () => {
+    console.log('POPUP Prop found')
+    setIsOpen(!isOpen);
+  }
+
+  // const handleContent=(contentSelection)=>{
+
+  //   if(contentSelection == 'excelScheduler'){
+      
+  //     content = <div>
+  //       <b>Email Sent!</b>
+  //           <p>Thank you so much for your interest in me. I look forward to discussing any future opportunity and will reply as soon as possible. <br/>
+  //           If you would like to send an additional email feel free to contact me at: <br/>fkane01@manhattan.edu </p>
+  //           <img src={profilePic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/>
+  //           <button onClick={togglePopup}>Close</button>
+  
+  //     </div>
+  //   }if(contentSelection == 'test'){
+  //     content = <div>
+  //       <b>test</b>
+            
+  
+  //     </div>
+      
+  //   }
+  
+  // }
 
 
     const handleMouseOver = async() => {
@@ -71,13 +104,20 @@ const AnimatedParagraph = styled.p`
       };
     return(
         <div className="portfolioWrapper">
+            
+            <ScrollAnimation animateIn="fadeInLeftBig"  animateOnce={false}>
+            {/* <img src={pillar} alt="" height={100} width={200} className='pillar'/> */}
+            <h3 className='portfolioTitle'>Portfolio</h3>
+            {/* <img src={pillar} alt="" height={100} width={200} className='pillar'/> */}
+            </ScrollAnimation>
+            
 
             <div className='portfolioTiles'>
 
 
             <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
-            <Hover>
-    <div>Hello</div>
+            <Hover onClick={togglePopup}>
+    <div> Python Powered Excel Scheduler</div>
     </Hover>
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
@@ -185,7 +225,13 @@ const AnimatedParagraph = styled.p`
 </div>
 </ScrollAnimation>
             
-
+{isOpen && <Popup  content={<>
+          <b>Excel Scheduler</b>
+          <p>This program was actually a favor to a friend who is still in the Air Force.<br/> He was having problems generating his schedule on time and needed some way to automate it.<br/>
+          If you would like to send an additional email feel free to contact me at: <br/>fkane01@manhattan.edu </p>
+          {/* <img src={profilepic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/> */}
+          <button onClick={togglePopup}>Close</button>
+        </>}></Popup>}
      
         </div>
 
