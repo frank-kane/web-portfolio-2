@@ -90,10 +90,19 @@ const AnimatedParagraph = styled.p`
             <table> 
               <tr key="">
               <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
-              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
-              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
 
             </tr>
+              
+              
+            </table>
+            <th>Included Concepts:</th>
+            <table> 
+              <ul>
+                <li>Mobile Development</li>
+                <li>Signup/Login System</li>
+                <li>Authentication</li>
+                <li>Database Integration</li>
+              </ul>
               
               
             </table>
@@ -103,22 +112,183 @@ const AnimatedParagraph = styled.p`
             <br/>
 
             <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
-            <p>This project was a favor to a friend who was having trouble creating his workshops schedule on time. <br/>
-            He needed a program where he could plug in values for dates and it would autogenerate thier schedule for them. 
-            Once he tested my program he said this has the potential to save hundreds of man hours.</p>
+            
             <br/>
             
-            <img src={profilePic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/>
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4"></source>
+            </video><br/>
             
           </>)
           togglePopup();
 
-        }if(contentChoice == 2){
+        }
+        if(contentChoice == 2){
           setContent(<>
-            <b>Test2</b>
-            <p>Thank you so much for your interest in me. I look forward to discussing any future opportunity and will reply as soon as possible. <br/>
-            If you would like to send an additional email feel free to contact me at: <br/>fkane01@manhattan.edu </p>
-            <img src={profilePic4} alt="" height='200' width='200' id='popupProfilePic' /> <br/>
+            <b>Manhattan College Roommate Finder</b>
+            <th>Frameworks:</th>
+            <table> 
+              <tr key="">
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={flutterIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+
+            </tr>
+              
+              
+            </table>
+
+            <th className='tableHeader'>Included Concepts:</th>
+            <table>
+              <ul>
+                <li className='listItem'>Mobile Development</li>
+                <li className='listItem'>Signup/Login System</li>
+                <li className='listItem'>Authentication</li>
+                <li className='listItem'>Database Integration</li>
+              </ul>
+              
+              
+            </table>
+            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+            The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
+            using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
+            is my most detailed application to date. </p>
+
+            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
+            
+            <br/>
+            
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4"></source>
+            </video><br/>
+            
+          </>)
+          togglePopup();
+          
+
+        }
+        if(contentChoice == 3){
+          setContent(<>
+            <b>Manhattan College Roommate Finder</b>
+            <th>Frameworks:</th>
+            <table> 
+              <tr key="">
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+
+            </tr>
+              
+              
+            </table>
+            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+            The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
+            using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
+            is my most detailed application to date. </p>
+
+            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
+            
+            <br/>
+            
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4"></source>
+            </video><br/>
+            
+          </>)
+          togglePopup();
+          
+
+        }
+        if(contentChoice == 4){
+          setContent(<>
+            <b>Manhattan College Roommate Finder</b>
+            <th>Frameworks:</th>
+            <table> 
+              <tr key="">
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+
+            </tr>
+              
+              
+            </table>
+            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+            The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
+            using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
+            is my most detailed application to date. </p>
+
+            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
+            
+            <br/>
+            
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4"></source>
+            </video><br/>
+            
+          </>)
+          togglePopup();
+          
+
+        }
+        if(contentChoice == 5){
+          setContent(<>
+            <b>Manhattan College Roommate Finder</b>
+            <th>Frameworks:</th>
+            <table> 
+              <tr key="">
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+
+            </tr>
+              
+              
+            </table>
+            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+            The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
+            using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
+            is my most detailed application to date. </p>
+
+            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
+            
+            <br/>
+            
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4"></source>
+            </video><br/>
+            
+          </>)
+          togglePopup();
+          
+
+        }
+        if(contentChoice == 6){
+          setContent(<>
+            <b>Manhattan College Roommate Finder</b>
+            <th>Frameworks:</th>
+            <table> 
+              <tr key="">
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+
+            </tr>
+              
+              
+            </table>
+            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+            The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
+            using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
+            is my most detailed application to date. </p>
+
+            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
+            
+            <br/>
+            
+            <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4"></source>
+            </video><br/>
             
           </>)
           togglePopup();
