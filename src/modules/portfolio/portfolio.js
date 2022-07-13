@@ -86,7 +86,7 @@ const AnimatedParagraph = styled.p`
      async function setCurrentContent (contentChoice){
         if(contentChoice == 1){
           setContent(<>
-            <b>Excel Scheduler</b>
+            <b  id='inner-title' >Excel Scheduler</b>
             <th>Frameworks:</th>
             <table> 
               <tr key="">
@@ -97,7 +97,7 @@ const AnimatedParagraph = styled.p`
               
             </table>
             <th>Included Concepts:</th>
-            <table> 
+            <table id='portfolio-table'> 
               <ul>
                 <li>Mobile Development</li>
                 <li>Signup/Login System</li>
@@ -107,7 +107,7 @@ const AnimatedParagraph = styled.p`
               
               
             </table>
-            <p>This project was a favor to a friend who was having trouble creating his workshops schedule on time. <br/>
+            <p id='portfolio-desciption'>This project was a favor to a friend who was having trouble creating his workshops schedule on time. <br/>
             He needed a program where he could plug in values for dates and it would autogenerate thier schedule for them. 
             Once he tested my program he said this has the potential to save hundreds of man hours.</p>
             <br/>
@@ -118,7 +118,7 @@ const AnimatedParagraph = styled.p`
             {/* <video width="800" height="490" controls>
               <source src={pythonSchedulerDemo} type="video/mp4"></source>
             </video> */}
-            <iframe src="https://drive.google.com/file/d/1PHbJYXcrGKLRx5y5H8kqxVxWPEzXnPR0/preview" width="800" height="480" ></iframe>
+            <iframe className='portfolio-video' src="https://drive.google.com/file/d/1PHbJYXcrGKLRx5y5H8kqxVxWPEzXnPR0/preview" width="800" height="480" ></iframe>
             <br/>
 
             
@@ -130,7 +130,7 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 2){
           setContent(<>
-            <b>Manhattan College Roommate Finder</b>
+            <b id='inner-title' >Manhattan College Roommate Finder</b>
             <th>Frameworks:</th>
             <table> 
               <tr key="">
@@ -144,7 +144,7 @@ const AnimatedParagraph = styled.p`
             </table>
 
             <th className='tableHeader'>Included Concepts:</th>
-            <table>
+            <table id='portfolio-table'>
               <ul>
                 <li className='listItem'>Mobile Development</li>
                 <li className='listItem'>Signup/Login System</li>
@@ -154,12 +154,12 @@ const AnimatedParagraph = styled.p`
               
               
             </table>
-            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+            <p id='portfolio-desciption'>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
             The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
             using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
             is my most detailed application to date. </p>
 
-            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
+           
             
             <br/>
             
@@ -167,7 +167,7 @@ const AnimatedParagraph = styled.p`
               <source src="movie.mp4" type="video/mp4"></source>
             </video><br/> */}
 
-            <iframe src="https://drive.google.com/file/d/1PHbJYXcrGKLRx5y5H8kqxVxWPEzXnPR0/preview" width="800" height="480" ></iframe>
+            <iframe src="https://drive.google.com/file/d/1PHbJYXcrGKLRx5y5H8kqxVxWPEzXnPR0/preview" width="800" height="480" ></iframe>   <br/>
             
           </>)
           togglePopup();
@@ -351,7 +351,7 @@ const AnimatedParagraph = styled.p`
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
     <Hover onClick={()=>setCurrentContent(2)}>
-    <div>Hello</div>
+    <div>Manhattan College Capstone</div>
     </Hover>
     </ScrollAnimation>
     <br/>

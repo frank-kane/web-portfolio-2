@@ -30,6 +30,10 @@
   padding-right: 50px;
 }
 
+
+
+
+
 .portfolioGrid{
     display: grid;
   grid-template-columns: auto auto auto;
@@ -75,8 +79,10 @@
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: contain;
+    border-radius: 5px;
   }
   .gridItemLeft{
+    border-radius: 5px;
     // flex: 2;
     display: inline-block;
     margin-right: 0;

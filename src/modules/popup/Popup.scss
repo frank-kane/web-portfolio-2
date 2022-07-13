@@ -12,6 +12,7 @@
   top: 0;
   left: 0;
   
+  
 }
  
 .box {
@@ -22,7 +23,7 @@
   padding: 20px;
 
 
-  font-size: 35px;
+  font-size: 20px;
   color: antiquewhite;
 
   max-width: 1000px;
@@ -34,6 +35,9 @@
   max-height: 70vh;
   margin-top: calc(100vh - 85vh - 20px);
   background: rgb(73, 40, 40);
+  // background-image: url('./lamp3.jpg');
+  // background-repeat:no-repeat;
+  // background-size: cover;
   border-radius: 4px;
   padding: 20px;
   border: 1px solid #999;
@@ -43,6 +47,24 @@
   animation: popUp 1s ease-in
 }
 
+#inner-title{
+  display:block;
+  text-align: center;
+  
+}
+
+#portfolio-desciption{
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+#portfolio-table{
+  text-align: left;
+  display: block;
+}
 
 
 
