@@ -10,7 +10,7 @@
 
 # production
 /build
-src/modules/portfolio/videos/python-scheduler-demo.mp4
+# src/modules/portfolio/videos/python-scheduler-demo.mp4
 
 # misc
 .DS_Store
