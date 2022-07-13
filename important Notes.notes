@@ -43,3 +43,7 @@ const ExampleComponent = () => {
 }
 
 export default ExampleComponent;
+
+
+-------------------------------------------------------------------------------------------------------------------------------------->
+-the tiny code to the right is also a scroll.

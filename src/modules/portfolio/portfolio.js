@@ -91,18 +91,21 @@ const AnimatedParagraph = styled.p`
             <table> 
               <tr key="">
               <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Github'><a href="https://github.com/" target='blank'><img src={githubIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='VS Code'><a href="https://code.visualstudio.com/" target='blank'><img src={vscodeIcon} alt="" height={50} width={50}/></a></td>
 
             </tr>
               
               
             </table>
-            <th>Included Concepts:</th>
+            <th>Highlighted Concepts:</th>
             <table id='portfolio-table'> 
               <ul>
-                <li>Mobile Development</li>
-                <li>Signup/Login System</li>
-                <li>Authentication</li>
-                <li>Database Integration</li>
+                <li>Python Development</li>
+                <li>GUI Integration</li>
+                <li>Excel File Manipulation</li>
+                <li>Active Loading Displays</li>
+                <li>Desktop Development</li>
               </ul>
               
               
@@ -122,8 +125,8 @@ const AnimatedParagraph = styled.p`
             <br/>
 
             
-            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
-            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
+            <a href="https://github.com/Kandy-Kane/curtis_program" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/curtis_program/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
           </>)
           togglePopup();
 
@@ -137,13 +140,15 @@ const AnimatedParagraph = styled.p`
               <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={flutterIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Github'><a href="https://github.com/" target='blank'><img src={githubIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='VS Code'><a href="https://code.visualstudio.com/" target='blank'><img src={vscodeIcon} alt="" height={50} width={50}/></a></td>
 
             </tr>
               
               
             </table>
 
-            <th className='tableHeader'>Included Concepts:</th>
+            <th>Highlighted Concepts:</th>
             <table id='portfolio-table'>
               <ul>
                 <li className='listItem'>Mobile Development</li>
@@ -167,8 +172,10 @@ const AnimatedParagraph = styled.p`
               <source src="movie.mp4" type="video/mp4"></source>
             </video><br/> */}
 
-            <iframe src="https://drive.google.com/file/d/1PHbJYXcrGKLRx5y5H8kqxVxWPEzXnPR0/preview" width="800" height="480" ></iframe>   <br/>
+            <iframe src="https://drive.google.com/file/d/1uQqXkS-SYDgwSjdj25IOViKDB_CNoTuC/preview" width="800" height="480" ></iframe>   <br/>
             
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
           </>)
           togglePopup();
           
@@ -176,9 +183,9 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 3){
           setContent(<>
-            <b>Mobile App For Fun</b>
+            <b id='inner-title'>Mobile App For Fun</b>
             <th>Frameworks:</th>
-            <table> 
+            <table id='portfolio-table'> 
               <tr key="">
               <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
@@ -187,19 +194,33 @@ const AnimatedParagraph = styled.p`
             </tr>
               
               
+            </table >
+
+            <th>Highlighted Concepts:</th>
+            <table id='portfolio-table'>
+              <ul>
+                <li className='listItem'>Mobile Development</li>
+                <li className='listItem'>Signup/Login System</li>
+                <li className='listItem'>Authentication</li>
+                <li className='listItem'>Database Integration</li>
+              </ul>
+              
+              
             </table>
-            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+            <p id='portfolio-desciption'>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
             The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
             using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
             is my most detailed application to date. </p>
 
-            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
             
             <br/>
             
             <video width="320" height="240" controls>
               <source src="movie.mp4" type="video/mp4"></source>
             </video><br/>
+
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
             
           </>)
           togglePopup();
@@ -208,9 +229,9 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 4){
           setContent(<>
-            <b>Manhattan College Web Programming Class</b>
+            <b id='inner-title'>Manhattan College Web Programming Class</b>
             <th>Frameworks:</th>
-            <table> 
+            <table id='portfolio-table'> 
               <tr key="">
               <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
@@ -220,18 +241,32 @@ const AnimatedParagraph = styled.p`
               
               
             </table>
-            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+
+            <th>Highlighted Concepts:</th>
+            <table id='portfolio-table'>
+              <ul>
+                <li className='listItem'>Mobile Development</li>
+                <li className='listItem'>Signup/Login System</li>
+                <li className='listItem'>Authentication</li>
+                <li className='listItem'>Database Integration</li>
+              </ul>
+              
+              
+            </table>
+            <p id='portfolio-desciption'>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
             The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
             using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
             is my most detailed application to date. </p>
 
-            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
             
             <br/>
             
             <video width="320" height="240" controls>
               <source src="movie.mp4" type="video/mp4"></source>
             </video><br/>
+
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
             
           </>)
           togglePopup();
@@ -240,9 +275,9 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 5){
           setContent(<>
-            <b>Manhattan College Roommate Finder</b>
+            <b id='inner-title'>Manhattan College Roommate Finder</b>
             <th>Frameworks:</th>
-            <table> 
+            <table id='portfolio-table'> 
               <tr key="">
               <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
@@ -252,18 +287,31 @@ const AnimatedParagraph = styled.p`
               
               
             </table>
-            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+
+            <th>Highlighted Concepts:</th>
+            <table id='portfolio-table'>
+              <ul>
+                <li className='listItem'>Mobile Development</li>
+                <li className='listItem'>Signup/Login System</li>
+                <li className='listItem'>Authentication</li>
+                <li className='listItem'>Database Integration</li>
+              </ul>
+              
+              
+            </table>
+            <p id='portfolio-desciption'>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
             The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
             using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
             is my most detailed application to date. </p>
-
-            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
             
             <br/>
             
             <video width="320" height="240" controls>
               <source src="movie.mp4" type="video/mp4"></source>
             </video><br/>
+
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
             
           </>)
           togglePopup();
@@ -272,9 +320,9 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 6){
           setContent(<>
-            <b>Manhattan College Roommate Finder</b>
+            <b id='inner-title'>Manhattan College Roommate Finder</b>
             <th>Frameworks:</th>
-            <table> 
+            <table id='portfolio-table'> 
               <tr key="">
               <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
@@ -284,18 +332,31 @@ const AnimatedParagraph = styled.p`
               
               
             </table>
-            <p>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
+
+            <th>Highlighted Concepts:</th>
+            <table id='portfolio-table'>
+              <ul>
+                <li className='listItem'>Mobile Development</li>
+                <li className='listItem'>Signup/Login System</li>
+                <li className='listItem'>Authentication</li>
+                <li className='listItem'>Database Integration</li>
+              </ul>
+              
+              
+            </table>
+            <p id='portfolio-desciption'>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
             The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
             using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
             is my most detailed application to date. </p>
-
-            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
             
             <br/>
             
             <video width="320" height="240" controls>
               <source src="movie.mp4" type="video/mp4"></source>
             </video><br/>
+
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
             
           </>)
           togglePopup();
@@ -357,12 +418,12 @@ const AnimatedParagraph = styled.p`
     <br/>
     <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
     <Hover>
-    <div>Hello</div>
+    <div>Mobile App For Fun</div>
     </Hover>
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
     <Hover>
-    <div>Hello</div>
+    <div>MoMA Analysis Project</div>
     </Hover>
     </ScrollAnimation>
     <br/>
