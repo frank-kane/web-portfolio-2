@@ -137,7 +137,7 @@ const AnimatedParagraph = styled.p`
             <th>Frameworks:</th>
             <table> 
               <tr key="">
-              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={flutterIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://flutter.dev/" target='blank'> <img src={flutterIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='Github'><a href="https://github.com/" target='blank'><img src={githubIcon} alt="" height={50} width={50}/></a></td>
@@ -183,12 +183,13 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 3){
           setContent(<>
-            <b id='inner-title'>Mobile App For Fun</b>
+            <b id='inner-title'>Project Jojo+</b>
             <th>Frameworks:</th>
             <table id='portfolio-table'> 
               <tr key="">
-              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
-              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Flutter'><a href="https://flutter.dev/" target='blank'> <img src={flutterIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Github'><a href="https://github.com/" target='blank'><img src={githubIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='VS Code'><a href="https://code.visualstudio.com/" target='blank'><img src={vscodeIcon} alt="" height={50} width={50}/></a></td>
               <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
 
             </tr>
@@ -200,27 +201,26 @@ const AnimatedParagraph = styled.p`
             <table id='portfolio-table'>
               <ul>
                 <li className='listItem'>Mobile Development</li>
-                <li className='listItem'>Signup/Login System</li>
-                <li className='listItem'>Authentication</li>
-                <li className='listItem'>Database Integration</li>
+                <li className='listItem'>Interactive Sound/Video</li>
+                <li className='listItem'>Google Play Store Deployment</li>
+                <li className='listItem'>Google Play Ads</li>
               </ul>
               
               
             </table>
-            <p id='portfolio-desciption'>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
-            The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
-            using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
-            is my most detailed application to date. </p>
+            <p id='portfolio-desciption'>This was supposed to be a goof request from a friend, however it quickly turned into 
+            my own personal passion project to familarize myself with mobile programming. The application is deployed to 
+            Google Play Store and ended up getting over 13k downloads and is still growing. </p>
 
             
             <br/>
             
-            <video width="320" height="240" controls>
-              <source src="movie.mp4" type="video/mp4"></source>
-            </video><br/>
+            <iframe src="https://drive.google.com/file/d/1abKSsN-ICxCI2LAn1teeAh1p6AwTbt0U/preview" width="800" height="480" ></iframe> <br/>
 
-            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
-            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.kandykane.project_stands&hl=en_US&gl=US" target='blank'>Google Play Store</a> <br/>
+            <a href="https://github.com/Kandy-Kane/project_stands" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/project_stands/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
             
           </>)
           togglePopup();
@@ -229,7 +229,7 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 4){
           setContent(<>
-            <b id='inner-title'>Manhattan College Web Programming Class</b>
+            <b id='inner-title'>MoMa MapReduce</b>
             <th>Frameworks:</th>
             <table id='portfolio-table'> 
               <tr key="">
@@ -245,28 +245,29 @@ const AnimatedParagraph = styled.p`
             <th>Highlighted Concepts:</th>
             <table id='portfolio-table'>
               <ul>
-                <li className='listItem'>Mobile Development</li>
-                <li className='listItem'>Signup/Login System</li>
-                <li className='listItem'>Authentication</li>
-                <li className='listItem'>Database Integration</li>
+                <li className='listItem'>Big Data Development</li>
+                <li className='listItem'>Kubernetes</li>
+                <li className='listItem'>AWS Deployment</li>
+                <li className='listItem'>Linux Analysis</li>
               </ul>
               
               
             </table>
-            <p id='portfolio-desciption'>This was my capstone at Manhattan College and our group decided to create a roommate finder app for incoming college students. <br/>
-            The entire project was made in FLutter, is crossplatform, and is a fullstack application. The backend database and security was created
-            using Firebase which happens to pair quite easily with Flutter. This project contains the greatest amount of common software developer techniques and
-            is my most detailed application to date. </p>
+            <p id='portfolio-desciption'>This was one of my first big projects at Manhattan College. The goal of this project was to
+            create a program that analysis' a big chunk of data utilizing the Map Reduce method (minimum 100k lines). Our group decided to do our project on 
+            the Mueseum of Modern Art. Once our program runs it intakes every piece in the meuseum in json, and collects certain
+            information such as the artists age, gender, ethinicity, city, date created, and so on. We then combine these numbers to learn
+            for example how old the average artist was, whether the majority is male or female, and what country contributed the 
+            most art.   </p>
 
             
             <br/>
             
-            <video width="320" height="240" controls>
-              <source src="movie.mp4" type="video/mp4"></source>
-            </video><br/>
+            <iframe src="https://drive.google.com/file/d/1abKSsN-ICxCI2LAn1teeAh1p6AwTbt0U/preview" width="800" height="480" ></iframe> <br/>
 
-            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
-            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
+
+            <a href="https://github.com/Kandy-Kane/MoMa-MapReduce-Project" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/MoMa-MapReduce-Project/archive/refs/heads/main.zip">Github Repo Download</a> <br/>
             
           </>)
           togglePopup();
@@ -417,23 +418,23 @@ const AnimatedParagraph = styled.p`
     </ScrollAnimation>
     <br/>
     <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
-    <Hover>
+    <Hover onClick={()=>setCurrentContent(3)}>
     <div>Mobile App For Fun</div>
     </Hover>
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
-    <Hover>
+    <Hover onClick={()=>setCurrentContent(4)}>
     <div>MoMA Analysis Project</div>
     </Hover>
     </ScrollAnimation>
     <br/>
     <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
-    <Hover>
+    <Hover onClick={()=>setCurrentContent(5)}>
     <div>Hello</div>
     </Hover>
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
-    <Hover>
+    <Hover onClick={()=>setCurrentContent(6)}>
     <div>Hello</div>
     </Hover>
     </ScrollAnimation>
