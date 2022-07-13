@@ -115,9 +115,11 @@ const AnimatedParagraph = styled.p`
             
 
             
-            <video width="800" height="490" controls>
+            {/* <video width="800" height="490" controls>
               <source src={pythonSchedulerDemo} type="video/mp4"></source>
-            </video><br/>
+            </video> */}
+            <iframe src="https://drive.google.com/file/d/1PHbJYXcrGKLRx5y5H8kqxVxWPEzXnPR0/preview" width="800" height="480" ></iframe>
+            <br/>
 
             
             <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
@@ -174,7 +176,7 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 3){
           setContent(<>
-            <b>Manhattan College Roommate Finder</b>
+            <b>Mobile App For Fun</b>
             <th>Frameworks:</th>
             <table> 
               <tr key="">
@@ -206,7 +208,7 @@ const AnimatedParagraph = styled.p`
         }
         if(contentChoice == 4){
           setContent(<>
-            <b>Manhattan College Roommate Finder</b>
+            <b>Manhattan College Web Programming Class</b>
             <th>Frameworks:</th>
             <table> 
               <tr key="">
