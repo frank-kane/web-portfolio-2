@@ -263,7 +263,7 @@ const AnimatedParagraph = styled.p`
             
             <br/>
             
-            <iframe src="https://drive.google.com/file/d/1abKSsN-ICxCI2LAn1teeAh1p6AwTbt0U/preview" width="800" height="480" ></iframe> <br/>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTN_HI8sAIRFOF1o8phCdMuvSCkLCEENTgLQ9znYrA4P7-Eza-5eW44MMFfrlCgsQ/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <br/>
 
 
             <a href="https://github.com/Kandy-Kane/MoMa-MapReduce-Project" target='blank'>Github Link</a> <br/>
