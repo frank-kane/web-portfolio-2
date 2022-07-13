@@ -161,9 +161,11 @@ const AnimatedParagraph = styled.p`
             
             <br/>
             
-            <video width="320" height="240" controls>
+            {/* <video width="320" height="240" controls>
               <source src="movie.mp4" type="video/mp4"></source>
-            </video><br/>
+            </video><br/> */}
+
+            <iframe src="https://drive.google.com/file/d/1PHbJYXcrGKLRx5y5H8kqxVxWPEzXnPR0/preview" width="800" height="480" ></iframe>
             
           </>)
           togglePopup();
