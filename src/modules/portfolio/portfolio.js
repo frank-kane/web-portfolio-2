@@ -20,6 +20,7 @@ import Popup from '../popup/Popup';
 import profilePic4 from '../images/profilepic4.jpg'
 import wheel from '../images/wheel.webp'
 import '../popup/Popup.scss';
+import pythonSchedulerDemo from './videos/python-scheduler-demo.mp4'
 const Portfolio = () =>{
     const [isOpen, setIsOpen] = useState(false);
     const [isHovering, setIsHovering] = useState(false);
@@ -43,7 +44,7 @@ const Portfolio = () =>{
 
   /* When the user hovers over the component, it becomes opaque over 300ms */
   &:hover {
-    opacity: 0.75;
+    opacity: 1;
     transition: opacity 300ms ease-in-out;
   }
 
@@ -111,14 +112,16 @@ const AnimatedParagraph = styled.p`
             Once he tested my program he said this has the potential to save hundreds of man hours.</p>
             <br/>
 
-            <img className='projectImage' src={wheel} alt="" height={300} width={700}/> <br/>
             
-            <br/>
+
             
-            <video width="320" height="240" controls>
-              <source src="movie.mp4" type="video/mp4"></source>
+            <video width="800" height="490" controls>
+              <source src={pythonSchedulerDemo} type="video/mp4"></source>
             </video><br/>
+
             
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2" target='blank'>Github Link</a> <br/>
+            <a href="https://github.com/Kandy-Kane/web-portfolio-2/archive/refs/heads/master.zip">Github Repo Download</a> <br/>
           </>)
           togglePopup();
 

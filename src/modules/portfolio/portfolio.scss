@@ -71,7 +71,10 @@
     text-align: center;
     height: 200px;
     width: 30%;
-    background-image: url('./codingTile.jpg');
+    background-image: url(./icons/codingIcon3.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
   }
   .gridItemLeft{
     // flex: 2;
@@ -85,7 +88,10 @@
     text-align: center;
     height: 200px;
     width: 30%;
-    background-image: url(../images/airforce.png);
+    background-image: url(./icons/codingIcon3.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
   }
 
  
