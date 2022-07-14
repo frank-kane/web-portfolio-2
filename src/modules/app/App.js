@@ -76,7 +76,7 @@ useEffect(() => {
   return (
     
     <div className="App">
-      <div className='scrollPosition'>Scroll Position:{scrollPosition}:NUM:</div>
+      {/* <div className='scrollPosition'>Scroll Position:{scrollPosition}:NUM:</div> */}
 
       <ParallaxProvider>
       {scrollPosition > 2000 &&
@@ -101,7 +101,7 @@ useEffect(() => {
 
       <div className='contentHolder'>
 
-      <Introduction/>
+      <Introduction scrollToEmail={scrollToEmail}/>
       <div ref={portfolioRef}></div>
       <Portfolio />
 

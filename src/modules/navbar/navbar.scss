@@ -9,6 +9,7 @@
     width: 10%;
     margin-left: 5px;
     font-family: 'Montserrat';
+    
 }
 
 
@@ -34,7 +35,7 @@ margin-right: 0;
 .border-animation {
     --border-width: 0.1em;
     --animation-speed: 0.5s;
-    --color: #854545;
+    --color: #9c2828;
     color: var(--color);
     position: relative;
     display: inline-block;
@@ -42,6 +43,7 @@ margin-right: 0;
     line-height: 1em;
     transform: scale(1, 0.8);
     border: var(--border-width) solid transparent;
+    // border-bottom: solid 3px rgb(0, 81, 134);
     
     .border-animation__inner {
       position: relative;

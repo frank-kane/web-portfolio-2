@@ -36,6 +36,7 @@ const Portfolio = () =>{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   /* The component is not opaque, but opacity transitions out for 300ms */
   background-color: #efece4;
@@ -408,27 +409,27 @@ const AnimatedParagraph = styled.p`
 
             <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
             <Hover onClick={()=>setCurrentContent(1)}>
-    <div> Python Powered Excel Scheduler</div>
+    <div id='portfolio-tile-title'> Python Powered Excel Scheduler</div>
     </Hover >
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
     <Hover onClick={()=>setCurrentContent(2)}>
-    <div>Manhattan College Capstone</div>
+    <div id='portfolio-tile-title'>Manhattan College Capstone</div>
     </Hover>
     </ScrollAnimation>
     <br/>
     <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
     <Hover onClick={()=>setCurrentContent(3)}>
-    <div>Mobile App For Fun</div>
+    <div id='portfolio-tile-title'>Mobile App For Fun</div>
     </Hover>
     </ScrollAnimation>
     <ScrollAnimation animateIn="fadeInRightBig" className='gridItemRight' animateOnce={false}>
     <Hover onClick={()=>setCurrentContent(4)}>
-    <div>MoMA Analysis Project</div>
+    <div id='portfolio-tile-title'>MoMA Analysis Project</div>
     </Hover>
     </ScrollAnimation>
     <br/>
-    <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
+    {/* <ScrollAnimation animateIn="fadeInLeftBig" className='gridItemLeft' animateOnce={false}>
     <Hover onClick={()=>setCurrentContent(5)}>
     <div>Hello</div>
     </Hover>
@@ -437,7 +438,7 @@ const AnimatedParagraph = styled.p`
     <Hover onClick={()=>setCurrentContent(6)}>
     <div>Hello</div>
     </Hover>
-    </ScrollAnimation>
+    </ScrollAnimation> */}
 
 
             </div>
@@ -500,17 +501,7 @@ const AnimatedParagraph = styled.p`
     </div>
     
     
-    {/* <img src={reactIcon} alt="" />
-    <img src={cIcon} alt="" />
-    <img src={flutterIcon} alt="" />
-    <img src={pythonIcon} alt="" />
-    <img src={javascriptIcon} alt="" />
-    <br/>
-    <img src={htmlIcon} alt="" />
-    <img src={cssIcon} alt="" />
-    <img src={reactIcon} alt="" />
-    <img src={reactIcon} alt="" />
-    <img src={reactIcon} alt="" /> */}
+
     
     
 </div>

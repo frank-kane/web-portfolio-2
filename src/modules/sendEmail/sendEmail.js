@@ -130,15 +130,15 @@ const SendEmail = (props)=>{
   
     
     <button type='submit' id='sendButton'> <img src={sendArrow} alt="" id='sendArrow'/></button>
-    <button onClick={props.togglePopup} id='sendButton'> <img src={sendArrow} alt="" id='sendArrow'/></button>
+    {/* <button onClick={props.togglePopup} id='sendButton'> <img src={sendArrow} alt="" id='sendArrow'/></button> */}
     
     <br/>
   
   
   
-  <a href="www.linkedin.com/in/frank-kane-2471b9149"> <img  id='socialMediaPic' src={linkedInIcon2} alt="" width="100" height="100"/></a>
-    <a href="https://my.indeed.com/p/frankk-xvxytmw"> <img  id='socialMediaPic' src={indeed2} alt="" width="100" height="100"/></a>
-   <a href="https://www.instagram.com/codingwithkane/"> <img id='socialMediaPic' src={instaTest} alt="" width="100" height="100"/></a>
+  <a href="https://linkedin.com/in/frank-kane-2471b9149" target="blank"> <img  id='socialMediaPic' src={linkedInIcon2} alt="" width="100" height="100"/></a>
+    <a href="https://my.indeed.com/p/frankk-xvxytmw" target="blank"> <img  id='socialMediaPic' src={indeed2} alt="" width="100" height="100"/></a>
+   <a href="https://www.instagram.com/codingwithkane/" target="blank"> <img id='socialMediaPic' src={instaTest} alt="" width="100" height="100"/></a>
    
       
       
