@@ -12,6 +12,8 @@ import nodejsIcon from './icons/nodejsIcon.webp'
 import sqlIcon from './icons/sqlIcon.png'
 import firebaseIcon from './icons/firebaseIcon.webp'
 import vscodeIcon from './icons/vscodeIcon.png'
+import linuxIcon from './icons/linuxIcon.png'
+import javaIcon from './icons/javaIcon.png'
 import pillar from './pillar.webp'
 import {useState} from 'react';
 import styled from "styled-components";
@@ -234,9 +236,10 @@ const AnimatedParagraph = styled.p`
             <th>Frameworks:</th>
             <table id='portfolio-table'> 
               <tr key="">
-              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
-              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
-              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Java'><a href="https://www.java.org/" target='blank'> <img src={javaIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Linux'><a href="https://www.linux.org/" target='blank'> <img src={linuxIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Github'><a href="https://github.com/" target='blank'><img src={githubIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='VS Code'><a href="https://code.visualstudio.com/" target='blank'><img src={vscodeIcon} alt="" height={50} width={50}/></a></td>
 
             </tr>
               
@@ -326,9 +329,10 @@ const AnimatedParagraph = styled.p`
             <th>Frameworks:</th>
             <table id='portfolio-table'> 
               <tr key="">
-              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={pythonIcon} alt="" height={50} width={50}/></a></td>
-              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={htmlIcon} alt="" height={50} width={50}/></a></td>
-              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={firebaseIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Python 3.9'><a href="https://www.python.org/" target='blank'> <img src={linuxIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='HTML 5'><a href="https://html.com/" target='blank'><img src={javaIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='Firebase'><a href="https://firebase.google.com/" target='blank'><img src={githubIcon} alt="" height={50} width={50}/></a></td>
+              <td key="" className='rowItem' title='VS Code'><a href="https://firebase.google.com/" target='blank'><img src={vscodeIcon} alt="" height={50} width={50}/></a></td>
 
             </tr>
               
